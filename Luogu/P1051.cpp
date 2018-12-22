@@ -1,48 +1,48 @@
-// [P1051 Ë­ÄÃÁË×î¶à½±Ñ§½ğ] https://www.luogu.org/problemnew/show/P1051
+ï»¿// [P1051 è°æ‹¿äº†æœ€å¤šå¥–å­¦é‡‘] https://www.luogu.org/problemnew/show/P1051
 #include <iostream>
 #include <algorithm>
 using namespace std;
 struct student {
-    string name;  // Ñ§ÉúĞÕÃû
-    short pinjun; // ÆÚÄ©Æ½¾ù³É¼¨£¬ÊÂÊµÉÏÊÇpingjun¡£¡£¡£¡£¡£¡£
-    short pingyi; // °à¼¶ÆÀÒé³É¼¨
-    char isGanbu; // ÊÇ·ñÊÇÑ§Éú¸É²¿
-    char westStu; // ÊÇ·ñÊÇÎ÷²¿Ñ§Éú
-    short lunwen; // ·¢±íÂÛÎÄÊı
+    string name;  // å­¦ç”Ÿå§“å
+    short pinjun; // æœŸæœ«å¹³å‡æˆç»©ï¼Œäº‹å®ä¸Šæ˜¯pingjunã€‚ã€‚ã€‚ã€‚ã€‚ã€‚
+    short pingyi; // ç­çº§è¯„è®®æˆç»©
+    char isGanbu; // æ˜¯å¦æ˜¯å­¦ç”Ÿå¹²éƒ¨
+    char westStu; // æ˜¯å¦æ˜¯è¥¿éƒ¨å­¦ç”Ÿ
+    short lunwen; // å‘è¡¨è®ºæ–‡æ•°
 
-    int i;        // µÚ i ¸öÑ§Éú
-    int getMoney; // »ñµÃµÄ½±Ñ§½ğ
-}; // ²»ÒªÍüÁË struct ½áÎ²ÒªÓĞ·ÖºÅÅ¶~
+    int i;        // ç¬¬ i ä¸ªå­¦ç”Ÿ
+    int getMoney; // è·å¾—çš„å¥–å­¦é‡‘
+}; // ä¸è¦å¿˜äº† struct ç»“å°¾è¦æœ‰åˆ†å·å“¦~
 int main()
 {
-    int n;      // Ñ§Éú×ÜÊı
-    int getMoneySum=0; // Ñ§ÉúÃÇ»ñµÃµÄ½±Ñ§½ğ×ÜÊı
+    int n;      // å­¦ç”Ÿæ€»æ•°
+    int getMoneySum=0; // å­¦ç”Ÿä»¬è·å¾—çš„å¥–å­¦é‡‘æ€»æ•°
     cin >> n;
     student a[n];
-    for (int i = 0; i < n; i++) // ·Ö±ğÊäÈëÃ¿¸öÑ§ÉúµÄĞÅÏ¢
+    for (int i = 0; i < n; i++) // åˆ†åˆ«è¾“å…¥æ¯ä¸ªå­¦ç”Ÿçš„ä¿¡æ¯
     {
         cin >> a[i].name >> a[i].pinjun >> 
                a[i].pingyi >> a[i].isGanbu >> 
                a[i].westStu >> a[i].lunwen;
         a[i].i = i;
-        a[i].getMoney = 0;  // ÎªÁË°²È«Æğ¼û£¬»¹ÊÇ³õÊ¼»¯Ôò¸ö°É
-        if (a[i].pinjun > 80 && a[i].lunwen >= 1) // ÔºÊ¿½±Ñ§½ğ
+        a[i].getMoney = 0;  // ä¸ºäº†å®‰å…¨èµ·è§ï¼Œè¿˜æ˜¯åˆå§‹åŒ–åˆ™ä¸ªå§
+        if (a[i].pinjun > 80 && a[i].lunwen >= 1) // é™¢å£«å¥–å­¦é‡‘
         {
             a[i].getMoney+=8000; 
         }
-        if (a[i].pinjun > 85 && a[i].pingyi > 80) // ÎåËÄ½±Ñ§½ğ
+        if (a[i].pinjun > 85 && a[i].pingyi > 80) // äº”å››å¥–å­¦é‡‘
         {
             a[i].getMoney+=4000;
         }
-        if (a[i].pinjun > 90) // ³É¼¨ÓÅĞã½±
+        if (a[i].pinjun > 90) // æˆç»©ä¼˜ç§€å¥–
         {
             a[i].getMoney+=2000;
         }
-        if (a[i].pinjun > 85 && a[i].westStu == 'Y') // Î÷²¿½±Ñ§½ğ
+        if (a[i].pinjun > 85 && a[i].westStu == 'Y') // è¥¿éƒ¨å¥–å­¦é‡‘
         {
             a[i].getMoney+=1000;
         }
-        if (a[i].pingyi > 80 && a[i].isGanbu == 'Y') // °à¼¶¹±Ï×½±
+        if (a[i].pingyi > 80 && a[i].isGanbu == 'Y') // ç­çº§è´¡çŒ®å¥–
         {
             a[i].getMoney+=850;
         }
@@ -51,12 +51,12 @@ int main()
     }
 
     int maxx = 0; 
-    for (int i = 1; i < n; i++) // Çó³ö»ñµÃ×î¶à½±Ñ§½ğµÄÑ§Éú
+    for (int i = 1; i < n; i++) // æ±‚å‡ºè·å¾—æœ€å¤šå¥–å­¦é‡‘çš„å­¦ç”Ÿ
     {
         if (a[i].getMoney > a[maxx].getMoney)maxx = i;
     }
 
     cout << a[maxx].name << endl << a[maxx].getMoney << endl << getMoneySum << endl;
 
-    return 0;   // ºÍ³ÌĞòËµÔÙ¼û
+    return 0;   // å’Œç¨‹åºè¯´å†è§
 }

@@ -1,4 +1,4 @@
-// [P1075 ÖÊÒòÊý·Ö½â] https://www.luogu.org/problemnew/show/P1075
+ï»¿// [P1075 è´¨å› æ•°åˆ†è§£] https://www.luogu.org/problemnew/show/P1075
 #include <iostream>
 
 using namespace std;

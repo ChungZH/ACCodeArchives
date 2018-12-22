@@ -1,4 +1,4 @@
-// [P1068 ·ÖÊýÏß»®¶¨] https://www.luogu.org/problemnew/show/P1068
+ï»¿// [P1068 åˆ†æ•°çº¿åˆ’å®š] https://www.luogu.org/problemnew/show/P1068
 #include <iostream>
 #include <fstream>
 #include <algorithm>

@@ -1,4 +1,4 @@
-// [P1000 ³¬¼¶ÂêÀöÓÎÏ·] https://www.luogu.org/problemnew/show/P1000
+ï»¿// [P1000 è¶…çº§ç›ä¸½æ¸¸æˆ] https://www.luogu.org/problemnew/show/P1000
 #include<stdio.h>
 int main() {
     printf(

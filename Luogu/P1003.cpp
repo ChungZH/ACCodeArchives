@@ -1,4 +1,4 @@
-// [P1003 �̵�̺] https://www.luogu.org/problemnew/show/P1003
+﻿// [P1003 铺地毯] https://www.luogu.org/problemnew/show/P1003
 #include <iostream>
 using namespace std;
 int main()

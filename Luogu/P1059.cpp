@@ -1,4 +1,4 @@
-// [P1059 Ã÷Ã÷µÄËæ»úÊı] https://www.luogu.org/problemnew/show/P1059
+ï»¿// [P1059 æ˜æ˜çš„éšæœºæ•°] https://www.luogu.org/problemnew/show/P1059
 #include <iostream>
 using namespace std;
 int main()
