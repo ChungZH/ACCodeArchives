@@ -11,5 +11,8 @@
 - UVa：[UVa OJ](https://uva.onlinejudge.org)
 - SMOJ：石中信息学在线测试
 
+如果是想膜拜我这个蒟蒻的，**请绕路**🚧🚧🚧 可以前往 [洛谷](https://luogu.org) 刷题，不要在我这里浪费时间了😂
+
+
 ## 项目结构
 
