@@ -11,8 +11,14 @@
 - UVa：[UVa OJ](https://uva.onlinejudge.org)
 - SMOJ：石中信息学在线测试
 
-如果是想膜拜我这个蒟蒻的，**请绕路**🚧🚧🚧 可以前往 [洛谷](https://luogu.org) 刷题，不要在我这里浪费时间了😂
+如果是想膜拜我这个蒟蒻的，**请绕路**🚧🚧🚧 我只是一个小学生蒟蒻。无聊的话可以前往[洛谷](https://luogu.org)刷题，不要在我这里浪费时间了😂
 
 
 ## 项目结构
 
+
+
+------
+💡 **aoapc-bac2nd-source** ©ChungZH. 你要转就转吧 License ~~反正这么弱的项目也没人转载~~
+
+[@Blog](https://chungzh.cn/) · [ⒿJike](https://web.okjike.com/user/5755a791-fb07-4b43-807c-3385334195c9/) · [@GitHub](https://github.com/chungzh)
