@@ -9,12 +9,31 @@
 
 - Luogu：[洛谷 Online Judge](https://luogu.org)
 - UVa：[UVa OJ](https://uva.onlinejudge.org)
+- CodeForces：[CodeForces](https://codeforces.com/)
 - SMOJ：石中信息学在线测试
 
 如果是想膜拜我这个蒟蒻的，**请绕路**🚧🚧🚧 我只是一个小学生蒟蒻。无聊的话可以前往[洛谷](https://luogu.org)刷题，不要在我这里浪费时间了😂
 
 
 ## 项目结构
+
+```bash
+.
+├── CodeForces
+│   └── CF59A.cpp
+├── Luogu
+│   ├── P1000.cpp
+│   ├── P1001.cpp
+│   ├── P1003.cpp
+│   ├── P1046.cpp
+│   ├── P1051.cpp
+│   ├── P1059.cpp
+│   ├── P1068.cpp
+│   └── P1075.cpp
+└── README.md
+
+2 directories, 10 files
+```
 
 
 
