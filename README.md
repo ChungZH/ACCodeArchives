@@ -11,6 +11,7 @@
 - UVa：[UVa OJ](https://uva.onlinejudge.org)
 - CodeForces：[CodeForces](https://codeforces.com/)
 - AtCoder：[AtCoder](https://atcoder.jp/)
+- USACO：[USACO](https://train.usaco.org/)
 
 ## 项目结构
 
