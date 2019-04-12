@@ -21,8 +21,7 @@ int main()
         for (int j = 0; j < n; j++)
         {
         	if (i == j) continue;
-        	
-        	if(a[i] + b[i] == a[j] && a[j] + b[j] == a[i])
+        	if (a[i] + b[i] == a[j] && a[j] + b[j] == a[i])
             {
                 cout << "YES" << endl;
                 return 0;
