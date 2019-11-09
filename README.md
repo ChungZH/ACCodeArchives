@@ -14,6 +14,7 @@
 - USACO：[USACO](https://train.usaco.org/)
 - SPOJ: [Sphere Online Judge](https://www.spoj.com/)
 - LeetCode: [LeetCode](https://leetcode-cn.com)
+- SMOJ: [石门中学 OJ](https://smoj.nhedu.net)
 
 ## 项目结构
 
