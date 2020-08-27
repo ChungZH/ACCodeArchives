@@ -22,7 +22,7 @@ jobs:
         with:
           commit-message: "style: Format codes"
           title: "Format codes for ${{ github.ref }}"
-          labels: "style"
+          labels: "auto-pr/style"
           assignees: "${{ github.actor }}"
           reviewers: "${{ github.actor }}"
           branch: "auto-pr/clang-format/${{ github.ref }}"
