@@ -8,13 +8,12 @@ int main()
     long long sum = 0;
     cin >> n;
 
-    for (int i = 0; i < n; i++)
-    {
+    for (int i = 0; i < n; i++) {
         cin >> t;
-        sum += t * (i+1);
+        sum += t * (i + 1);
     }
 
     cout << sum << endl;
-    
+
     return 0;
 }

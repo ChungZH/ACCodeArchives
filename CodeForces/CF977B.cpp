@@ -1,7 +1,7 @@
 // [CF977B Two-gram] https://www.luogu.org/problem/CF977B
+#include <algorithm>
 #include <iostream>
 #include <map>
-#include <algorithm>
 using namespace std;
 
 int main()
@@ -11,16 +11,13 @@ int main()
     string a, temp;
     cin >> a;
 
-
     map<string, int> m;
     int maxa = 0;
     string ta;
-    for (int i = 0; i < n-1; i++)
-    {
+    for (int i = 0; i < n - 1; i++) {
         temp = a.substr(i, 2);
         m[temp]++;
-        if (m[temp] > maxa) 
-        {
+        if (m[temp] > maxa) {
             maxa = m[temp];
             ta = temp;
         }

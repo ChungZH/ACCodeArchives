@@ -5,27 +5,20 @@ int main()
 {
     int n, l, g;
     cin >> n >> l >> g;
-    while (n--)
-    {
+    while (n--) {
         int w, h;
         cin >> w >> h;
-        
-        while (w > g || h > g)
-        {
+
+        while (w > g || h > g) {
             w /= 2;
             h /= 2;
         }
-        
-        if (w < l || h < l)
-        {
+
+        if (w < l || h < l) {
             cout << "Too Young" << endl;
-        }
-        else if (w != h)
-        {
+        } else if (w != h) {
             cout << "Too Simple" << endl;
-        }
-        else 
-        {
+        } else {
             cout << "Sometimes Naive" << endl;
         }
     }

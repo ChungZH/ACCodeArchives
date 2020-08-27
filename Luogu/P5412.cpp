@@ -1,7 +1,7 @@
 // [P5412 [YNOI2019]排队] https://www.luogu.org/problemnew/show/P5412
+#include <algorithm>
 #include <iostream>
 #include <vector>
-#include <algorithm>
 
 using namespace std;
 
@@ -10,8 +10,7 @@ int main()
     int T;
     cin >> T;
 
-    while (T --> 0)
-    {
+    while (T-- > 0) {
         int n;
         cin >> n;
 
@@ -27,31 +26,27 @@ int main()
             cin >> sex[i];
 
         double temp;
-        for (int i = 0; i < n; i++)
-        {
+        for (int i = 0; i < n; i++) {
             cin >> temp;
-            if (sex[i] == 0)
-            {
+            if (sex[i] == 0) {
                 gir.push_back(temp);
             } else {
                 boy.push_back(temp);
             }
         }
-        
+
         sort(boy.begin(), boy.end());
         sort(gir.begin(), gir.end());
 
-        for (auto a : gir)
-        {
+        for (auto a : gir) {
             cout << a << " ";
         }
         cout << endl;
 
-        for (auto a : boy)
-        {
+        for (auto a : boy) {
             cout << a << " ";
         }
         cout << endl;
-    }    
+    }
     return 0;
 }

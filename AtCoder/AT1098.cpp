@@ -8,7 +8,9 @@ int main()
     cin >> n;
 
     n %= 40;
-    if (n <= 20) cout << n << endl;
-    else cout << 20-(n-20)+1 << endl;
+    if (n <= 20)
+        cout << n << endl;
+    else
+        cout << 20 - (n - 20) + 1 << endl;
     return 0;
 }

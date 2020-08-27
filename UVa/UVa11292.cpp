@@ -1,6 +1,6 @@
 // [UVA11292 Dragon of Loowater] https://www.luogu.org/problemnew/show/UVA11292
-#include <cstdio>
 #include <algorithm>
+#include <cstdio>
 #include <cstring>
 
 #define MAXN 20005
@@ -10,8 +10,7 @@ int main()
     int n, m;
     int a[MAXN], b[MAXN];
 
-    while (scanf("%d%d", &n, &m) == 2 && n && m)
-    {
+    while (scanf("%d%d", &n, &m) == 2 && n && m) {
         memset(a, 0, sizeof(a));
         memset(b, 0, sizeof(b));
 
@@ -19,23 +18,21 @@ int main()
             scanf("%d", &a[i]);
         for (int i = 0; i < m; i++)
             scanf("%d", &b[i]);
-        
-        std::sort(a, a+n);
-        std::sort(b, b+m);
+
+        std::sort(a, a + n);
+        std::sort(b, b + m);
 
         int cur = 0, money = 0;
 
-        for (int i = 0; i < m; i++)
-        {
-            if (b[i] >= a[cur])
-            {
+        for (int i = 0; i < m; i++) {
+            if (b[i] >= a[cur]) {
                 money += b[i];
-                if (++cur == n) break;
+                if (++cur == n)
+                    break;
             }
         }
 
-        if (cur < n)
-        {
+        if (cur < n) {
             printf("Loowater is doomed!\n");
         } else {
             printf("%d\n", money);

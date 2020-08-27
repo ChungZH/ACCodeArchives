@@ -8,8 +8,7 @@ int main()
     int q;
     cin >> q;
 
-    while (q--)
-    {
+    while (q--) {
         int n, cur = 0;
         cin >> n;
 
@@ -20,23 +19,25 @@ int main()
         for (int i = 0; i < n; i++)
             cin >> b[i];
 
-        for (int i = 0; i < n; i++)
-        {
+        for (int i = 0; i < n; i++) {
             s.push(a[i]);
-            while (s.top() == b[cur])
-            {
+            while (s.top() == b[cur]) {
                 s.pop();
                 cur++;
 
-                if (s.empty()) break; 
+                if (s.empty())
+                    break;
             }
         }
 
-        if (s.empty()) cout << "Yes\n";
-        else cout << "No\n";
+        if (s.empty())
+            cout << "Yes\n";
+        else
+            cout << "No\n";
 
         // 清空栈
-        while (!s.empty()) s.pop();
+        while (!s.empty())
+            s.pop();
     }
     return 0;
 }

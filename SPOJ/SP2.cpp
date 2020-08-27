@@ -6,15 +6,12 @@ int main()
 {
     int n;
     cin >> n;
-    while (n--)
-    {
+    while (n--) {
         int a, b;
         cin >> a >> b;
-        
-        for (int i = a; i <= b; i++)
-        {
-            if (isprime(i))
-            {
+
+        for (int i = a; i <= b; i++) {
+            if (isprime(i)) {
                 cout << i << endl;
             }
         }
@@ -24,14 +21,16 @@ int main()
 }
 bool isprime(int a)
 {
-    if (a == 2) return true;
-    if (a == 1) return false;
-    
+    if (a == 2)
+        return true;
+    if (a == 1)
+        return false;
+
     int t = sqrt(a);
-    
-    for (int i = 2; i <= t; i++)
-    {
-        if (a % i == 0) return false;
+
+    for (int i = 2; i <= t; i++) {
+        if (a % i == 0)
+            return false;
     }
     return true;
 }

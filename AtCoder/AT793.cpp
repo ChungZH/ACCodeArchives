@@ -7,7 +7,7 @@ int main()
     int n;
     cin >> n;
 
-    int ans = (1+n)*n/2 * 10000 / n;
+    int ans = (1 + n) * n / 2 * 10000 / n;
     cout << ans << endl;
     return 0;
 }

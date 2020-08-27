@@ -10,11 +10,10 @@ int main()
     double sum = 0.00;
     cin >> n;
 
-    for (int i = 0; i < n; i++)
-    {
+    for (int i = 0; i < n; i++) {
         int a, b;
         cin >> a >> b;
-        sum += a*b;
+        sum += a * b;
     }
     sum *= 1.05;
 

@@ -8,12 +8,12 @@ int main()
     cin >> n;
 
     int temp, maxx = 0;
-    for (int i = 0; i < n; i++)
-    {
+    for (int i = 0; i < n; i++) {
         cin >> temp;
-        if (temp > maxx) maxx = temp;
+        if (temp > maxx)
+            maxx = temp;
     }
 
-    cout << (maxx^temp) << endl;
+    cout << (maxx ^ temp) << endl;
     return 0;
 }

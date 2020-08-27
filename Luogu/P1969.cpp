@@ -8,25 +8,22 @@ long long a[1000000];
 int main()
 {
     cin >> n;
-    
-    for (int i = 0; i < n; i++)
-    {
+
+    for (int i = 0; i < n; i++) {
         cin >> a[i];
     }
-    
+
     now = ans = a[0];
-    
-    for (int i = 1; i < n; i++)
-    {
-        if (a[i] > now)
-        {
+
+    for (int i = 1; i < n; i++) {
+        if (a[i] > now) {
             ans += a[i] - now;
         }
-        
+
         now = a[i];
     }
-    
+
     cout << ans << endl;
-    
-    return 0; 
+
+    return 0;
 }

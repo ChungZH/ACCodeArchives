@@ -9,21 +9,16 @@ int main()
     cin >> s;
 
     int slen = s.length();
-    
-    for (int i = 0; i < slen; i++)
-    {
-        if (s[i] == 'C') 
-        {
-            for (int j = i+1; j < slen; j++)
-            {
-                if (s[j] == 'F')
-                {
+
+    for (int i = 0; i < slen; i++) {
+        if (s[i] == 'C') {
+            for (int j = i + 1; j < slen; j++) {
+                if (s[j] == 'F') {
                     cout << "Yes" << endl;
                     return 0;
                 }
             }
         }
-        
     }
 
     cout << "No" << endl;

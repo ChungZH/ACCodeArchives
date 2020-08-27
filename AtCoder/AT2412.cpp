@@ -6,24 +6,22 @@ int main()
 {
     int n, k, maxx = 0;
     cin >> n >> k;
-    
-    for (int i = 1; i <= n; i++)
-    {
+
+    for (int i = 1; i <= n; i++) {
         cin >> a[i];
     }
-    
+
     b[1] = a[1];
-    
-    for (int i = 2; i <= n; i++)
-    {
-        b[i] = b[i-1] + a[i];
+
+    for (int i = 2; i <= n; i++) {
+        b[i] = b[i - 1] + a[i];
     }
-    
-    for (int i = k; i <= n; i++)
-    {
-        if (b[i] - b[i-k] > maxx) maxx = b[i] - b[i-k];
+
+    for (int i = k; i <= n; i++) {
+        if (b[i] - b[i - k] > maxx)
+            maxx = b[i] - b[i - k];
     }
-    
+
     cout << maxx << endl;
     return 0;
 }

@@ -8,20 +8,18 @@ int main()
 
     cin >> a >> d >> m >> g >> p >> b;
 
-    if (a > g)
-    {
+    if (a > g) {
         cout << "NO" << endl;
         return 0;
-    } else g -= a;
+    } else
+        g -= a;
 
-    if (d > g+p)
-    {
+    if (d > g + p) {
         cout << "NO" << endl;
         return 0;
     }
 
-    if (m > g+p+b-d)
-    {
+    if (m > g + p + b - d) {
         cout << "NO" << endl;
         return 0;
     }

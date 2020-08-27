@@ -1,8 +1,8 @@
 // [P2356 µØ÷È”Œœ∑] https://www.luogu.org/problemnew/show/P2356
 
-#include <iostream>
 #include <algorithm>
 #include <cctype>
+#include <iostream>
 
 using namespace std;
 
@@ -16,35 +16,27 @@ int main()
     int maxx = 0;
 
     cin >> n;
-    
-    for (int i = 0; i < n; i++)
-    {
-        for (int j = 0; j < n; j++)
-        {
+
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
             cin >> a[i][j];
-            if (a[i][j] == 0 && flag == false) 
-            { 
+            if (a[i][j] == 0 && flag == false) {
                 flag = true;
             }
             sumX[i] += a[i][j];
             sumY[j] += a[i][j];
         }
-
     }
 
-    if (flag == false)
-    {
+    if (flag == false) {
         cout << "Bad Game!" << endl;
         return 0;
     }
 
-    for (int i = 0; i < n; i++)
-    {
-        for (int j = 0; j < n; j++)
-        {
-            if (a[i][j] == 0)
-            {
-                maxx = max(sumX[i]+sumY[j], maxx);
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            if (a[i][j] == 0) {
+                maxx = max(sumX[i] + sumY[j], maxx);
             }
         }
     }

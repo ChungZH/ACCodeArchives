@@ -8,8 +8,7 @@ int main()
     double t, sum2 = 0.00;
     scanf("%d", &n);
 
-    for (int i = 0; i < n; i++)
-    {
+    for (int i = 0; i < n; i++) {
         scanf("%*lf %lf", &t);
         sum2 += t;
     }

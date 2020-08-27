@@ -1,7 +1,7 @@
 // [AT2001 Wanna go back home] https://www.luogu.org/problemnew/show/AT2001
+#include <algorithm>
 #include <iostream>
 #include <map>
-#include <algorithm>
 using namespace std;
 
 string s;
@@ -28,8 +28,7 @@ int main()
     bool flag = false;
 
     slen = s.length();
-    for (int i = 0; i < slen; i++)
-    {
+    for (int i = 0; i < slen; i++) {
         if (s[i] == 'N')
             flag = check('N');
         else if (s[i] == 'S')
@@ -38,9 +37,8 @@ int main()
             flag = check('W');
         else if (s[i] == 'E')
             flag = check('E');
-        
-        if (!flag)
-        {
+
+        if (!flag) {
             cout << "No\n";
             return 0;
         }

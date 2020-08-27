@@ -1,6 +1,6 @@
 // [CF784F Crunching Numbers Just for You] https://www.luogu.org/problemnew/show/CF784F
-#include <iostream>
 #include <algorithm>
+#include <iostream>
 using namespace std;
 
 int main()
@@ -12,7 +12,7 @@ int main()
     for (int i = 0; i < n; i++)
         cin >> a[i];
 
-    sort(a, a+n);
+    sort(a, a + n);
 
     for (int i = 0; i < n; i++)
         cout << a[i] << ' ';

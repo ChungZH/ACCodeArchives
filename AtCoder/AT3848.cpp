@@ -13,25 +13,20 @@ int main()
     cin >> s;
 
     int slen = s.length();
-    for (int i = 0; i < a; i++)
-    {
-        if (s[i] < '0' || s[i] > '9')
-        {
+    for (int i = 0; i < a; i++) {
+        if (s[i] < '0' || s[i] > '9') {
             cout << "No" << endl;
             return 0;
         }
     }
 
-    if (s[a] != '-')
-    {
+    if (s[a] != '-') {
         cout << "No" << endl;
         return 0;
     }
 
-    for (int i = a+1; i < slen; i++)
-    {
-        if (s[i] < '0' || s[i] > '9')
-        {
+    for (int i = a + 1; i < slen; i++) {
+        if (s[i] < '0' || s[i] > '9') {
             cout << "No" << endl;
             return 0;
         }

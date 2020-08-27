@@ -7,16 +7,13 @@ int main()
     long long a;
     cin >> a;
 
-    for (long long n = a; ; n++)
-    {
+    for (long long n = a;; n++) {
         long long s = 0, t = n;
-        while (t)
-        {
+        while (t) {
             s += t % 10;
             t /= 10;
         }
-        if (s % 4 == 0)
-        {
+        if (s % 4 == 0) {
             cout << n << endl;
             break;
         }

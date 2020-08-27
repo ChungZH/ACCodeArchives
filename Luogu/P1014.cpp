@@ -8,16 +8,14 @@ int main()
 
     int i = 0, s = 0;
 
-    while (n > s)
-    {
+    while (n > s) {
         s += ++i;
     }
 
-    if (i % 2 == 1)
-    {
-        cout << s-n+1 << '/' << i+n-s << endl;
+    if (i % 2 == 1) {
+        cout << s - n + 1 << '/' << i + n - s << endl;
     } else {
-        cout << i+n-s << '/' << s-n+1 << endl;
+        cout << i + n - s << '/' << s - n + 1 << endl;
     }
 
     return 0;

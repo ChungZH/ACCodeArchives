@@ -1,6 +1,6 @@
 // [CF1003A Polycarp's Pockets] https://www.luogu.org/problemnew/show/CF1003A
-#include <iostream>
 #include <algorithm>
+#include <iostream>
 
 using namespace std;
 
@@ -11,11 +11,11 @@ int main()
 {
     cin >> n;
 
-    for (int i = 0; i < n; i++)
-    {
+    for (int i = 0; i < n; i++) {
         cin >> t;
         a[t]++;
-        if (a[t] > ans) ans = a[t];
+        if (a[t] > ans)
+            ans = a[t];
     }
 
     cout << ans << endl;

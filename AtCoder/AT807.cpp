@@ -1,13 +1,13 @@
 // [AT807 素数、コンテスト、素数] https://www.luogu.org/problemnew/show/AT807
-#include <iostream>
 #include <cmath>
+#include <iostream>
 using namespace std;
 
 bool isPrime(int a)
 {
-    for (int i = 2; i <= sqrt(a); i++)
-    {
-        if (a % i == 0) return false;
+    for (int i = 2; i <= sqrt(a); i++) {
+        if (a % i == 0)
+            return false;
     }
     return true;
 }

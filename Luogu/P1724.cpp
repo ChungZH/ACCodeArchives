@@ -12,12 +12,9 @@ int main()
     long long x, y, tx, ty;
     x = y = tx = ty = 0;
 
-    if (T < s.length())
-    {
-        for (int i = 0; i < T; i++)
-        {
-            switch (s[i])
-            {
+    if (T < s.length()) {
+        for (int i = 0; i < T; i++) {
+            switch (s[i]) {
             case 'E':
                 x++;
                 break;
@@ -37,10 +34,8 @@ int main()
 
         std::cout << x << y << std::endl;
     } else {
-        for (int i = 0; i < s.length(); i++)
-        {
-            switch (s[i])
-            {
+        for (int i = 0; i < s.length(); i++) {
+            switch (s[i]) {
             case 'E':
                 tx++;
                 break;
@@ -63,12 +58,9 @@ int main()
         x += temp * tx;
         y += temp * ty;
 
-        if (T % s.length() != 0)
-        {
-            for (int i = 0; i < T % s.length(); i++)
-            {
-                switch (s[i])
-                {
+        if (T % s.length() != 0) {
+            for (int i = 0; i < T % s.length(); i++) {
+                switch (s[i]) {
                 case 'E':
                     x++;
                     break;

@@ -10,12 +10,12 @@ int main()
     cin >> n;
 
     int cnt = 0;
-    for (int i = 1; i <= n; i++)
-    {
+    for (int i = 1; i <= n; i++) {
         int x;
         cin >> x;
         a[x]++;
-        if (a[x] > 1) cnt++;
+        if (a[x] > 1)
+            cnt++;
     }
 
     cout << cnt << '\n';

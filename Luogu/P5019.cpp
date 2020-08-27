@@ -7,21 +7,19 @@ long long n, now, ans;
 int main()
 {
     cin >> n;
-    
-    for (int i = 0; i < n; i++)
-    {
+
+    for (int i = 0; i < n; i++) {
         int a;
         cin >> a;
-        
-        if (a > now)
-        {
+
+        if (a > now) {
             ans += a - now;
         }
-        
+
         now = a;
     }
-    
+
     cout << ans << endl;
-    
-    return 0; 
+
+    return 0;
 }

@@ -8,20 +8,17 @@ int main()
     cin >> m;
 
     long long cnt = 0, ans = 0;
-    for (long long i = 1; i <= m; i++)
-    {
+    for (long long i = 1; i <= m; i++) {
         long long t, a, b;
         cin >> t;
 
         cnt += f[i];
-        if (t == 1)
-        {
+        if (t == 1) {
             cin >> a;
             cnt += a;
         } else if (t == 2) {
             cin >> a;
-            if (cnt < a)
-            {
+            if (cnt < a) {
                 ans++;
             } else {
                 cnt -= a;

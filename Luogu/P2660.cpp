@@ -1,6 +1,6 @@
 // [P2660 zzc 种田] https://www.luogu.org/problemnew/show/P2660
-#include <cstdio>
 #include <algorithm>
+#include <cstdio>
 #include <iostream>
 
 using namespace std;
@@ -13,9 +13,8 @@ int main()
 
     long long ans = 0, minn = min(x, y), maxx = max(x, y);
 
-    while (x && y)
-    {
-        ans += 4 * minn * (maxx/minn);
+    while (x && y) {
+        ans += 4 * minn * (maxx / minn);
         maxx %= minn;
         x = maxx;
         y = minn;

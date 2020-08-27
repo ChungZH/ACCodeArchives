@@ -5,19 +5,16 @@ int main()
 {
     int n;
     cin >> n;
-    while (n--)
-    {
+    while (n--) {
         int a, b, ans = 0;
         cin >> a >> b;
 
-        while (min(a, b) > 0 && max(a, b) >= 2)
-        {
-            if (a > b)
-            {
-                a-=2;
+        while (min(a, b) > 0 && max(a, b) >= 2) {
+            if (a > b) {
+                a -= 2;
                 b--;
             } else {
-                b-=2;
+                b -= 2;
                 a--;
             }
             ans++;

@@ -1,6 +1,6 @@
 // [CF1148A Another One Bites The Dust] https://www.luogu.org/problemnew/show/CF1148A
-#include <iostream>
 #include <algorithm>
+#include <iostream>
 using namespace std;
 
 int main()
@@ -13,9 +13,9 @@ int main()
 
     long long temp = min(a, b);
 
-    ans += c*2;
+    ans += c * 2;
     ans += temp * 2;
-    
+
     a -= temp;
     b -= temp;
 
