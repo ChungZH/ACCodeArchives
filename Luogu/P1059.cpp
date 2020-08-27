@@ -5,9 +5,8 @@ int main()
 {
     int n, u = 0;
     cin >> n;
-    int a[1001] = {0};
-    for (int i = 0; i < n; i++)
-    {
+    int a[1001] = { 0 };
+    for (int i = 0; i < n; i++) {
         int temp;
         cin >> temp;
         if (a[temp] == 1)
@@ -17,9 +16,8 @@ int main()
     }
 
     cout << u << endl;
-    
-    for (int i = 0; i < 1001; i++)
-    {
+
+    for (int i = 0; i < 1001; i++) {
         if (a[i] == 1)
             cout << i << " ";
     }

@@ -6,17 +6,15 @@ int main()
     int n, k;
     cin >> n >> k;
     int a[n];
-    for (int i = 0; i < n; i++)
-    {
+    for (int i = 0; i < n; i++) {
         cin >> a[i];
     }
-    sort(a, a+n);
-    int ans = unique(a, a+n) - a;
-    if(k < ans)
-    {
-        cout<<a[k-1];
+    sort(a, a + n);
+    int ans = unique(a, a + n) - a;
+    if (k < ans) {
+        cout << a[k - 1];
     } else {
-        cout<<"NO RESULT" << endl;
-    } 
+        cout << "NO RESULT" << endl;
+    }
     return 0;
 }

@@ -18,25 +18,21 @@ int main()
 
 inline void dfs(int x, int step)
 {
-    if (x == b)
-    {
+    if (x == b) {
         ans = min(ans, step);
-        return ;
+        return;
     }
-    if (step >= ans)
-    {
-        return ;
+    if (step >= ans) {
+        return;
     }
-    if (x > b)
-    {
-        dfs(x-1, step+1);
-        dfs(x-10, step+1);
-        dfs(x-5, step+1);
-        
+    if (x > b) {
+        dfs(x - 1, step + 1);
+        dfs(x - 10, step + 1);
+        dfs(x - 5, step + 1);
+
     } else if (x < b) {
-        dfs(x+1, step+1);
-        dfs(x+10, step+1);
-        dfs(x+5, step+1);
-        
+        dfs(x + 1, step + 1);
+        dfs(x + 10, step + 1);
+        dfs(x + 5, step + 1);
     }
 }

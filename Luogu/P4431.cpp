@@ -8,12 +8,11 @@ int main()
     int k;
     scanf("%d", &k);
 
-    while (k--)
-    {
+    while (k--) {
         int n, m;
         scanf("%d%d", &n, &m);
 
-        printf("%d\n", (min(n, m)-1)*2);
+        printf("%d\n", (min(n, m) - 1) * 2);
     }
 
     return 0;

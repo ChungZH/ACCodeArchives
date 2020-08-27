@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-const int a[] = {1, 0, 0, 0, 1, 0, 1, 0, 2, 1, 1, 2, 0, 1, 0, 0};
+const int a[] = { 1, 0, 0, 0, 1, 0, 1, 0, 2, 1, 1, 2, 0, 1, 0, 0 };
 
 int main()
 {
@@ -10,9 +10,9 @@ int main()
 
     cin >> n;
 
-    if (!n) ans++;
-    while (n)
-    {
+    if (!n)
+        ans++;
+    while (n) {
         ans += a[n % 16];
         n /= 16;
     }

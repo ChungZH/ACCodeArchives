@@ -1,6 +1,6 @@
 // [CF545D Queue] https://www.luogu.org/problemnew/show/CF545D
-#include <iostream>
 #include <algorithm>
+#include <iostream>
 using namespace std;
 
 int n;
@@ -10,22 +10,19 @@ long long ans, tim;
 int main()
 {
     cin >> n;
-    for (int i = 0; i < n; i++)
-    {
+    for (int i = 0; i < n; i++) {
         cin >> a[i];
     }
-    
-    sort(a, a+n);
-    
-    for (int i = 0; i < n; i++)
-    {
-        if (tim <= a[i]) 
-        {
+
+    sort(a, a + n);
+
+    for (int i = 0; i < n; i++) {
+        if (tim <= a[i]) {
             tim += a[i];
             ans++;
         }
     }
-    
+
     cout << ans << endl;
     return 0;
 }

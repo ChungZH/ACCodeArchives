@@ -4,12 +4,12 @@ using namespace std;
 int gcd(int x, int y);
 int main()
 {
-	int a, b, c;
-	cin >> a >> b >> c;
-	cout << gcd(a, gcd(b, c)) << endl;
-	return 0;
+    int a, b, c;
+    cin >> a >> b >> c;
+    cout << gcd(a, gcd(b, c)) << endl;
+    return 0;
 }
 int gcd(int x, int y)
 {
-	return x % y ? gcd(y, x % y):y;
+    return x % y ? gcd(y, x % y) : y;
 }

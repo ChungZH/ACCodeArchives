@@ -4,24 +4,23 @@ using namespace std;
 
 int main()
 {
-    int asum = 0; 
-    
+    int asum = 0;
+
     string s;
     cin >> s;
-    
+
     int slen = s.length();
-    
-    for (int i = 0; i < slen; i++)
-    {
-        if (s[i] == 'a') asum++;
+
+    for (int i = 0; i < slen; i++) {
+        if (s[i] == 'a')
+            asum++;
     }
-    
-    while (asum <= slen / 2)
-    {
+
+    while (asum <= slen / 2) {
         slen--;
     }
-    
+
     cout << slen << endl;
-    
-    return 0; 
+
+    return 0;
 }

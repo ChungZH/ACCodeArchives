@@ -1,16 +1,15 @@
 // [AT941 小石を取るゲーム] https://www.luogu.org/problemnew/show/AT941
-#include <iostream>
 #include <cmath>
+#include <iostream>
 using namespace std;
 int main()
 {
     int n, a, b;
     cin >> n >> a >> b;
-    
-    n %= (a+b);
-    
-    if (n == 0) 
-    {
+
+    n %= (a + b);
+
+    if (n == 0) {
         cout << "Bug" << endl;
     } else if (n <= a) {
         cout << "Ant" << endl;

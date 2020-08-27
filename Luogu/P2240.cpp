@@ -5,31 +5,32 @@
 #include <iostream>
 using namespace std;
 struct node {
-  double m, v, p;
+    double m, v, p;
 };
 bool cmp(node a, node b) { return a.p > b.p; }
 double sum, c;
-int main() {
-  int n;
-  cin >> n >> c;
+int main()
+{
+    int n;
+    cin >> n >> c;
 
-  node a[n];
-  for (int i = 0; i < n; i++) {
-    cin >> a[i].m >> a[i].v;
-    a[i].p = a[i].v / a[i].m;
-  }
-  sort(a, a + n, cmp);
-
-  for (int i = 0; i < n; i++) {
-    if (a[i].m <= c) {
-      c -= a[i].m;
-      sum += a[i].v;
-    } else {
-      sum += c * a[i].p;
-      break;
+    node a[n];
+    for (int i = 0; i < n; i++) {
+        cin >> a[i].m >> a[i].v;
+        a[i].p = a[i].v / a[i].m;
     }
-  }
+    sort(a, a + n, cmp);
 
-  printf("%.2f", sum);
-  return 0;
+    for (int i = 0; i < n; i++) {
+        if (a[i].m <= c) {
+            c -= a[i].m;
+            sum += a[i].v;
+        } else {
+            sum += c * a[i].p;
+            break;
+        }
+    }
+
+    printf("%.2f", sum);
+    return 0;
 }

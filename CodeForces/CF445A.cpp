@@ -1,6 +1,6 @@
 // [CF445A DZY Loves Chessboard] https://www.luogu.org/problem/CF445A
-#include <iostream>
 #include <algorithm>
+#include <iostream>
 
 using namespace std;
 #define f(x, y, z) for (int x = (y), __ = (z); x < __; ++x)
@@ -15,10 +15,8 @@ int main()
         f(j, 0, m)
         {
             cin >> a[i][j];
-            if (a[i][j] != '-')
-            {
-                if ((i+j)%2==0)
-                {
+            if (a[i][j] != '-') {
+                if ((i + j) % 2 == 0) {
                     a[i][j] = 'W';
                 } else {
                     a[i][j] = 'B';

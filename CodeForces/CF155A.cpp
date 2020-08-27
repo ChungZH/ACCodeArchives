@@ -10,25 +10,22 @@ int main()
 {
     cin >> n;
 
-    for (int i = 0; i < n; i++)
-    {
+    for (int i = 0; i < n; i++) {
         int a;
         cin >> a;
 
-        if (i == 0)
-        {
-            maxx = a; minn = a; 
+        if (i == 0) {
+            maxx = a;
+            minn = a;
             continue;
         }
 
-        if (a > maxx)
-        {
+        if (a > maxx) {
             ans++;
             maxx = a;
         }
 
-        if (a < minn)
-        {
+        if (a < minn) {
             ans++;
             minn = a;
         }

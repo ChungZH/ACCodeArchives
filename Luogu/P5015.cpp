@@ -7,9 +7,9 @@ int main()
     string s;
     getline(cin, s);
     int strleng = s.length();
-    for (int i = 0; i < strleng; i++)
-    {
-        if (s[i] != ' ') sum++;
+    for (int i = 0; i < strleng; i++) {
+        if (s[i] != ' ')
+            sum++;
     }
     cout << sum << endl;
     return 0;

@@ -1,6 +1,6 @@
 // [AT360 雨上がり] https://www.luogu.org/problem/AT360
-#include <iostream>
 #include <cmath>
+#include <iostream>
 
 using namespace std;
 
@@ -17,11 +17,11 @@ int main()
     f[1] = (s[0] == 'X');
     f[2] = (s[1] == 'X');
     f[3] = (s[2] == 'X');
-    for (int i = 4; i <= n; i++)
-    {
-        f[i] = min(min(f[i-3], f[i-2]), f[i-1]);
+    for (int i = 4; i <= n; i++) {
+        f[i] = min(min(f[i - 3], f[i - 2]), f[i - 1]);
 
-        if (s[i-1] == 'X') f[i]++;
+        if (s[i - 1] == 'X')
+            f[i]++;
     }
 
     cout << f[n] << endl;

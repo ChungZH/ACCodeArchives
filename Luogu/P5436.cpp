@@ -7,12 +7,13 @@ int main()
     long long n;
     cin >> n;
 
-    while (n--)
-    {
+    while (n--) {
         long long a;
         cin >> a;
-        if (a == 1) cout << 1 << endl;
-        else cout << a*(a-1) << endl;
+        if (a == 1)
+            cout << 1 << endl;
+        else
+            cout << a * (a - 1) << endl;
     }
     return 0;
 }

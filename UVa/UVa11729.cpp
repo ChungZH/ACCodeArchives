@@ -1,12 +1,13 @@
 // [UVA11729 Commando War] https://www.luogu.org/problemnew/show/UVA11729
+#include <algorithm>
 #include <cstdio>
 #include <vector>
-#include <algorithm>
 using namespace std;
 
 struct Job {
     int j, b;
-    bool operator < (const Job& x) const {
+    bool operator<(const Job& x) const
+    {
         return j > x.j;
     }
 };
@@ -14,22 +15,19 @@ struct Job {
 int main()
 {
     int n, b, j, kase = 1;
-    while (scanf("%d", &n) == 1 && n) 
-    {
+    while (scanf("%d", &n) == 1 && n) {
         vector<Job> v;
-        for (int i = 0; i < n; i++)
-        {
+        for (int i = 0; i < n; i++) {
             scanf("%d%d", &b, &j);
-            v.push_back((Job){j, b});
+            v.push_back((Job) { j, b });
         }
 
         sort(v.begin(), v.end());
         int s = 0;
         int ans = 0;
-        for (int i = 0; i < n; i++)
-        {
+        for (int i = 0; i < n; i++) {
             s += v[i].b;
-            ans = max(ans, s+v[i].j);
+            ans = max(ans, s + v[i].j);
         }
 
         printf("Case %d: %d\n", kase++, ans);

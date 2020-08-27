@@ -13,8 +13,7 @@ int main()
     int n;
     cin >> n;
 
-    for (int i = 0; i < n; i++)
-    {
+    for (int i = 0; i < n; i++) {
         int t, score;
         string name;
         cin >> t;
@@ -23,8 +22,7 @@ int main()
         {
             cin >> name >> score;
 
-            if (m[name] == 0)
-            {
+            if (m[name] == 0) {
                 pnum++;
             }
             m[name] = score;
@@ -32,8 +30,7 @@ int main()
         } else if (t == 2) { // 查询
             cin >> name;
 
-            if (m[name] == 0)
-            {
+            if (m[name] == 0) {
                 cout << "Not found\n";
             } else {
                 cout << m[name] << endl;
@@ -41,8 +38,7 @@ int main()
         } else if (t == 3) { // 删除
             cin >> name;
 
-            if (m[name] == 0)
-            {
+            if (m[name] == 0) {
                 cout << "Not found\n";
             } else {
                 m[name] = 0;

@@ -4,7 +4,7 @@
 using namespace std;
 
 int ans;
-const int a[26] {1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 4, 1, 2, 3, 1, 2, 3, 4};
+const int a[26] { 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 4, 1, 2, 3, 1, 2, 3, 4 };
 
 int main()
 {
@@ -13,13 +13,11 @@ int main()
 
     const int slen = s.length();
 
-    for (int i = 0; i < slen; i++)
-    {
-        if (s[i] >= 'a' && s[i] <= 'z')
-        {
+    for (int i = 0; i < slen; i++) {
+        if (s[i] >= 'a' && s[i] <= 'z') {
             ans += a[s[i] - 'a'];
         } else if (s[i] == ' ') {
-            ans ++;
+            ans++;
         }
     }
 

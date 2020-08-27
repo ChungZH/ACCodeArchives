@@ -9,7 +9,7 @@ int main()
     int n;
     cin >> n;
 
-    cout << arrPresidents[n-1] << endl;
+    cout << arrPresidents[n - 1] << endl;
 
     return 0;
 }

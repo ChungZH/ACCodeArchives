@@ -6,9 +6,10 @@ using namespace std;
 int ans, n, m;
 const int dx[] {
     2, 1, -1, -2
-},        dy[] {
-    1, 2, 2, 1
-};
+},
+    dy[] {
+        1, 2, 2, 1
+    };
 
 void dfs(int x, int y);
 
@@ -24,16 +25,15 @@ int main()
 
 void dfs(int x, int y)
 {
-    if (x == n && y == m)
-    {
+    if (x == n && y == m) {
         ans++;
-        return ;
+        return;
     }
 
-    if (x < 0 || y < 0 || x > n || y > m) return;
+    if (x < 0 || y < 0 || x > n || y > m)
+        return;
 
-    for (int i = 0; i < 4; i++)
-    {
+    for (int i = 0; i < 4; i++) {
         dfs(x + dx[i], y + dy[i]);
     }
 }

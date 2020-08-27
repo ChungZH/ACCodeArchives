@@ -1,6 +1,6 @@
 // [CF656F Ace It!] https://www.luogu.org/problemnew/show/CF656F
-#include <iostream>
 #include <cstdio>
+#include <iostream>
 using namespace std;
 
 int main()
@@ -8,8 +8,7 @@ int main()
     int ans = 1;
     getchar();
 
-    for (int i = 0; i < 6; i++)
-    {
+    for (int i = 0; i < 6; i++) {
         char c = getchar();
         if (c == '1')
             ans += 10;

@@ -1,15 +1,15 @@
-// [SMOJ 1920] 
-// 2019/11/02 -> 2019/11/09 创新班 
-// 递推 第三题 
-// 给你n个正整数，每个数可选或不选，要求选一些数，使它们的和为100，问有多少种方案？ 
+// [SMOJ 1920]
+// 2019/11/02 -> 2019/11/09 创新班
+// 递推 第三题
+// 给你n个正整数，每个数可选或不选，要求选一些数，使它们的和为100，问有多少种方案？
 
 /*
 在上一题的基础上修改
 */
-#include <iostream>
-#include <cmath>
 #include <algorithm>
+#include <cmath>
 #include <cstdio>
+#include <iostream>
 
 using namespace std;
 
@@ -22,21 +22,20 @@ int main()
     freopen("1920.out", "w", stdout);
     cin >> n;
 
-    for (int i = 1; i<= n; i++)
-    {
+    for (int i = 1; i <= n; i++) {
         int x;
         cin >> x;
-        if (x <= 100) a[++useful] = x;
+        if (x <= 100)
+            a[++useful] = x;
     }
 
     f[0][0] = 1;
-    for (int i = 1; i <= useful; i++)
-    {
+    for (int i = 1; i <= useful; i++) {
         f[i][0] = 1;
-        for (int j = 1; j <= 100; j++)
-        {
-            f[i][j] = f[i-1][j];
-            if (j >= a[i]) f[i][j] += f[i-1][j-a[i]];
+        for (int j = 1; j <= 100; j++) {
+            f[i][j] = f[i - 1][j];
+            if (j >= a[i])
+                f[i][j] += f[i - 1][j - a[i]];
         }
     }
 

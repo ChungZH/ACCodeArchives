@@ -9,47 +9,41 @@ string a, s[20];
 int main()
 {
     cin >> n >> k >> a;
-    for (int i = 0; i < n; i++)
-    {
+    for (int i = 0; i < n; i++) {
         cin >> v[i] >> s[i];
         ans *= v[i];
 
         // 判断能否试出
         bool flag = 0;
-        for (int j = 0; j < v[i]; j++)
-        {
-            if (a[i] == s[i][j])
-            {
+        for (int j = 0; j < v[i]; j++) {
+            if (a[i] == s[i][j]) {
                 flag = 1;
                 break;
             }
         }
-        if (!flag) { cout << -1 << endl; return 0; }
+        if (!flag) {
+            cout << -1 << endl;
+            return 0;
+        }
     }
 
     string d;
-    for (int i = 0; i < k; i++)
-    {
+    for (int i = 0; i < k; i++) {
         cin >> d;
         bool wf = 1;
-        for (int j = 0; j < d.length(); j++)
-        {
+        for (int j = 0; j < d.length(); j++) {
             int flag = 0;
-            for (int k = 0; k < v[j]; k++)
-            {
-                if (d[j] == s[j][k])
-                {
+            for (int k = 0; k < v[j]; k++) {
+                if (d[j] == s[j][k]) {
                     flag = 1;
                 }
             }
-            if (!flag)
-            {
+            if (!flag) {
                 wf = 0;
                 break;
             }
         }
-        if (wf)
-        {
+        if (wf) {
             ans--;
         }
     }

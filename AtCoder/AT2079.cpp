@@ -7,11 +7,11 @@ int main()
     cin >> s;
 
     int ans = 0;
-    for (int i = 0; i < 16; i++)
-    {
-        if (s[i] == ys[i]) ans++;
+    for (int i = 0; i < 16; i++) {
+        if (s[i] == ys[i])
+            ans++;
     }
 
-    cout << 16-ans << endl;
+    cout << 16 - ans << endl;
     return 0;
 }

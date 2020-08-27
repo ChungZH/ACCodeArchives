@@ -5,21 +5,19 @@
 using namespace std;
 
 const int maxn = 100000 + 5;
-int last, cur, next[maxn];  // 光标位于 cur 号字符的后面
+int last, cur, next[maxn]; // 光标位于 cur 号字符的后面
 char s[maxn];
 
 int main()
 {
-    while (scanf("%s", s+1) == 1)
-    {
-        int n = strlen(s+1);  // 输入保存在 s[1]，s[2]··· 中
+    while (scanf("%s", s + 1) == 1) {
+        int n = strlen(s + 1); // 输入保存在 s[1]，s[2]··· 中
         last = cur = 0;
         next[0] = 0;
 
-        for (int i = 1; i <= n; i++)
-        {
+        for (int i = 1; i <= n; i++) {
             char ch = s[i];
-            if (ch == '[')  // Home
+            if (ch == '[') // Home
             {
                 cur = 0;
             } else if (ch == ']') { // end
@@ -27,7 +25,8 @@ int main()
             } else {
                 next[i] = next[cur];
                 next[cur] = i;
-                if (cur == last) last = i; // 更新“最后一个字符”编号
+                if (cur == last)
+                    last = i; // 更新“最后一个字符”编号
                 cur = i; // 移动光标
             }
         }

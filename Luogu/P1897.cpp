@@ -6,26 +6,25 @@ bool pd[100000000];
 
 int main()
 {
-    int n, ans = 0, high=0;
+    int n, ans = 0, high = 0;
     cin >> n;
-    
+
     ans = n;
-    
-    for (int i = 0; i < n; i++)
-    {
+
+    for (int i = 0; i < n; i++) {
         int a;
-    	cin >> a;
-    	if (!pd[a])
-    	{
-    		ans += 5;
-    		pd[a] = 1;
-    	}
-    	if (a > high) high = a;
+        cin >> a;
+        if (!pd[a]) {
+            ans += 5;
+            pd[a] = 1;
+        }
+        if (a > high)
+            high = a;
     }
-    
+
     ans += high * 10;
-    
+
     cout << ans << endl;
-    
+
     return 0;
 }

@@ -1,6 +1,6 @@
 // [AT2285 Increment Decrement] https://www.luogu.org/problemnew/show/AT2285
-#include <iostream>
 #include <algorithm>
+#include <iostream>
 
 using namespace std;
 
@@ -12,19 +12,16 @@ int main()
 {
     cin >> N;
 
-    for (int i = 0; i < N; i++)
-    {
+    for (int i = 0; i < N; i++) {
         cin >> c;
 
-        if (c == 'I')
-        {
+        if (c == 'I') {
             now++;
         } else {
             now--;
         }
 
-        if (now > high)
-        {
+        if (now > high) {
             high = now;
         }
     }

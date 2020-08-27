@@ -9,20 +9,17 @@ bool book[22];
 
 void dfs(int step)
 {
-    if (step == r+1)
-    {
+    if (step == r + 1) {
         for (int i = 1; i <= r; i++)
             printf("%3d", ans[i]);
         putchar('\n');
-        return ;
+        return;
     }
-    for (int i = ans[step-1]; i <= n; i++)
-    {
-        if (!book[i] && i > ans[step-1])
-        {
+    for (int i = ans[step - 1]; i <= n; i++) {
+        if (!book[i] && i > ans[step - 1]) {
             ans[step] = i;
             book[i] = 1;
-            dfs(step+1);
+            dfs(step + 1);
             ans[step] = 0;
             book[i] = 0;
         }

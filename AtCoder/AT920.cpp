@@ -10,11 +10,9 @@ int main()
 
     n = 2025 - n;
 
-    for (int i = 1; i <= n && i < 10; i++)
-    {
-        int j = n/i;
-        if (i * j == n && j < 10)
-        {
+    for (int i = 1; i <= n && i < 10; i++) {
+        int j = n / i;
+        if (i * j == n && j < 10) {
             printf("%d x %d\n", i, j);
         }
     }

@@ -9,18 +9,12 @@ int main()
 
     const int alen = a.length();
 
-    for (int i = 0; i < alen-2; i++)
-    {
-        if (a[i] == 'Q')
-        {
-            for (int j = i+1; j < alen-1; j++)
-            {
-                if (a[j] == 'A')
-                {
-                    for (int k = j+1; k < alen; k++)
-                    {
-                        if (a[k] == 'Q')
-                        {
+    for (int i = 0; i < alen - 2; i++) {
+        if (a[i] == 'Q') {
+            for (int j = i + 1; j < alen - 1; j++) {
+                if (a[j] == 'A') {
+                    for (int k = j + 1; k < alen; k++) {
+                        if (a[k] == 'Q') {
                             ans++;
                         }
                     }

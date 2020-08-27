@@ -1,6 +1,6 @@
 // [CF656D Rosetta Problem] https://www.luogu.org/problemnew/show/CF656D
-#include <iostream>
 #include <algorithm>
+#include <iostream>
 using namespace std;
 
 int main()
@@ -10,8 +10,7 @@ int main()
     int x, y, z;
     cin >> x >> y >> z;
 
-    if (x + z == y && y + z == x)
-    {
+    if (x + z == y && y + z == x) {
         cout << '0' << endl;
     } else if (x + z > y && y + z < x) {
         cout << '+' << endl;

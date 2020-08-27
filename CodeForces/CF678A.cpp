@@ -7,12 +7,11 @@ int main()
 {
     long long n, k;
     cin >> n >> k;
-    
-    if (n % k == 0)
-    {
-        cout << n+k << endl;
+
+    if (n % k == 0) {
+        cout << n + k << endl;
     } else {
-        cout << n/k*k + k << endl;
+        cout << n / k * k + k << endl;
     }
     return 0;
 }

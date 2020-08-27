@@ -5,14 +5,15 @@ int main()
 {
     string a, b;
     cin >> a >> b;
-    
+
     int aLen = a.length();
-    for (int i = aLen - 1; i >= 0; i--)
-    {
-        for (int j = 0; j <= aLen - i; j++)
-        {
+    for (int i = aLen - 1; i >= 0; i--) {
+        for (int j = 0; j <= aLen - i; j++) {
             string temp = a.substr(j, i);
-            if (b.find(temp) != -1) { cout << i << endl; return 0; }
+            if (b.find(temp) != -1) {
+                cout << i << endl;
+                return 0;
+            }
         }
     }
     return 0;

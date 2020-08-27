@@ -8,25 +8,24 @@ int main()
     cin >> n;
 
     cin >> s;
-    
-    for (int i = 1; i < n; i++)
-    {
+
+    for (int i = 1; i < n; i++) {
         string s1;
 
         cin >> s1;
 
         int temp = s.find(s1[0]);
 
-        s.erase(s.begin()+temp);
+        s.erase(s.begin() + temp);
 
         s.insert(temp, s1);
     }
 
     int slen = s.length();
 
-    for (int i = 0; i < slen; i++)
-    {
-        if (s[i] != '*') cout << s[i];
+    for (int i = 0; i < slen; i++) {
+        if (s[i] != '*')
+            cout << s[i];
     }
     return 0;
 }

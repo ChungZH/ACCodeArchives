@@ -1,6 +1,6 @@
 // [P1469 找筷子] https://www.luogu.org/problemnew/show/P1469
-#include <iostream>
 #include <algorithm>
+#include <iostream>
 using namespace std;
 
 int main()
@@ -10,17 +10,14 @@ int main()
 
     int a[n];
 
-    for (int i = 0; i < n; i++)
-    {
+    for (int i = 0; i < n; i++) {
         cin >> a[i];
     }
 
-    sort(a, a+n);
+    sort(a, a + n);
 
-    for (int i = 0; i < n; i+=2)
-    {
-        if (a[i] != a[i+1])
-        {
+    for (int i = 0; i < n; i += 2) {
+        if (a[i] != a[i + 1]) {
             cout << a[i] << endl;
             break;
         }

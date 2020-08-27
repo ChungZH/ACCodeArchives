@@ -12,8 +12,7 @@ int main()
 {
     cin >> x;
 
-    for (int i = 1; i <= x; i++)
-    {
+    for (int i = 1; i <= x; i++) {
         int a, b;
         cin >> a >> b;
 
@@ -32,19 +31,16 @@ int main()
 void dfs(int step)
 {
 
-    for (int i = 1; i <= x; i++)
-    {
-        if (flag[i] && like[step][i])
-        {
+    for (int i = 1; i <= x; i++) {
+        if (flag[i] && like[step][i]) {
             flag[i] = false;
 
-            if (step == x)
-            {
+            if (step == x) {
                 ans++;
             } else {
-                dfs(step+1);
+                dfs(step + 1);
             }
-            
+
             flag[i] = true;
         }
     }

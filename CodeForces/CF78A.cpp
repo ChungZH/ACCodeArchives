@@ -11,27 +11,27 @@ inline bool isvowel(char c);
 
 int main()
 {
-    getline(cin, a); getline(cin, b); getline(cin, c);
-    
-    alen = a.length(); blen = b.length(); clen = c.length();
-    
-    for (int i = 0; i < alen; i++)
-    {
+    getline(cin, a);
+    getline(cin, b);
+    getline(cin, c);
+
+    alen = a.length();
+    blen = b.length();
+    clen = c.length();
+
+    for (int i = 0; i < alen; i++) {
         asum += isvowel(a[i]);
     }
-    
-    for (int i = 0; i < blen; i++)
-    {
+
+    for (int i = 0; i < blen; i++) {
         bsum += isvowel(b[i]);
     }
-    
-    for (int i = 0; i < clen; i++)
-    {
+
+    for (int i = 0; i < clen; i++) {
         csum += isvowel(c[i]);
     }
-    
-    if (asum == 5 && bsum == 7 && csum == 5)
-    {
+
+    if (asum == 5 && bsum == 7 && csum == 5) {
         cout << "YES" << endl;
     } else {
         cout << "NO" << endl;
@@ -41,10 +41,9 @@ int main()
 
 inline bool isvowel(char c)
 {
-    if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u')
-    {
+    if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
         return 1;
     }
-    
+
     return 0;
 }

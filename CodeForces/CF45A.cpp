@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-const string months[12] {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
+const string months[12] { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" };
 
 int main()
 {
@@ -12,15 +12,13 @@ int main()
     getline(cin, s);
     cin >> k;
 
-    for (int i = 0; i < 12; i++)
-    {
-        if (months[i] == s)
-        {
+    for (int i = 0; i < 12; i++) {
+        if (months[i] == s) {
             k += i;
         }
     }
 
-    cout << months[k%12] << endl;
+    cout << months[k % 12] << endl;
 
     return 0;
 }

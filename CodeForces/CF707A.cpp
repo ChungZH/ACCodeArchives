@@ -11,21 +11,17 @@ int main()
 
     cin >> n >> m;
 
-    for (int i = 0; i < n; i++)
-    {
-        for (int j = 0; j < m; j++)
-        {
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
             cin >> c;
 
-            if (c != 'B' && c != 'W' && c != 'G')
-            {
+            if (c != 'B' && c != 'W' && c != 'G') {
                 flag = true;
             }
         }
     }
 
-    if (!flag)
-    {
+    if (!flag) {
         cout << "#Black&White" << endl;
     } else {
         cout << "#Color" << endl;
