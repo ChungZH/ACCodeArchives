@@ -1,24 +1,35 @@
-// [P2240 数的计数数据加强版] https://www.luogu.org/problemnew/show/P2240
+// [P2240 【深基12.例1】部分背包问题] https://www.luogu.com.cn/problem/P2240
+#include <algorithm>
+#include <cmath>
+#include <cstdio>
 #include <iostream>
-
 using namespace std;
+struct node {
+  double m, v, p;
+};
+bool cmp(node a, node b) { return a.p > b.p; }
+double sum, c;
+int main() {
+  int n;
+  cin >> n >> c;
 
-int h[1500002];
+  node a[n];
+  for (int i = 0; i < n; i++) {
+    cin >> a[i].m >> a[i].v;
+    a[i].p = a[i].v / a[i].m;
+  }
+  sort(a, a + n, cmp);
 
-int main()
-{
-    int n;
-    cin >> n;
-
-    for (int i = 1; i <= n; i++)
-    {
-        h[i] = 1;
-        for (int j = 1; j <= i/2; j++)
-        {
-            h[i] += h[j];
-        }
+  for (int i = 0; i < n; i++) {
+    if (a[i].m <= c) {
+      c -= a[i].m;
+      sum += a[i].v;
+    } else {
+      sum += c * a[i].p;
+      break;
     }
+  }
 
-    cout << h[n] << endl;
-    return 0;
+  printf("%.2f", sum);
+  return 0;
 }
