@@ -85,8 +85,7 @@ int main()
 {
     readOJList();
 
-    is(ojList.isEmpty())
-    {
+    if (ojList.isEmpty()) {
         qDebug() << "Path ERROR!";
         return 0;
     }
