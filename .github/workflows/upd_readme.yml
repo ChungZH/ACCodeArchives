@@ -60,8 +60,9 @@ jobs:
           CXX: cl.exe
         run: |
           cd tools/rdme-files-upd/build
-          ls
-          ./rdme-files-upd.exe
+          choco install tree
+          tree .
+          ./Debug/rdme-files-upd.exe
       - name: Check diff
         run: git diff --exit-code HEAD
       - name: Create Pull Request
