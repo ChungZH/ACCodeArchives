@@ -60,7 +60,7 @@ jobs:
           CXX: cl.exe
         run: |
           cd tools/rdme-files-upd/build
-          ./*.exe
+          ./rdme-files-upd.exe
       - name: Check diff
         run: git diff --exit-code HEAD
       - name: Create Pull Request
