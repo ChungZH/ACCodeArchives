@@ -4,7 +4,8 @@
 #include <QString>
 #include <QVector>
 
-const QString repoRootPath = "../../";
+// root / tools / rdme-files-upd / build / Debug /
+const QString repoRootPath = "../../../../";
 
 QStringList ojList;
 
@@ -83,6 +84,13 @@ void updRepoRdme()
 int main()
 {
     readOJList();
+
+    is(ojList.isEmpty())
+    {
+        qDebug() << "Path ERROR!";
+        return 0;
+    }
+
     genOJRdme();
     updRepoRdme();
 
