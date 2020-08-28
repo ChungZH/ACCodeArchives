@@ -8,11 +8,11 @@
 
 目前存放的题目所在 OJ 有：
 
-- Luogu：[洛谷](https://luogu.com.cn)
-- UVa：[UVa OJ](https://uva.onlinejudge.org)
-- CodeForces：[CodeForces](https://codeforces.com/)
-- AtCoder：[AtCoder](https://atcoder.jp/)
-- USACO：[USACO](https://train.usaco.org/)
+- Luogu: [洛谷](https://luogu.com.cn)
+- UVa: [UVa OJ](https://uva.onlinejudge.org)
+- CodeForces: [CodeForces](https://codeforces.com/)
+- AtCoder: [AtCoder](https://atcoder.jp/)
+- USACO: [USACO](https://train.usaco.org/)
 - SPOJ: [Sphere Online Judge](https://www.spoj.com/)
 - LeetCode: [LeetCode](https://leetcode-cn.com)
 - SMOJ: [石门中学 OJ](https://smoj.nhedu.net)
