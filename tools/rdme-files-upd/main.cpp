@@ -12,6 +12,7 @@ QStringList ojList;
 void readOJList()
 {
     QDir repoCodesDir(repoRootPath + "codes/");
+    qDebug() << repoCodesDir;
     ojList = repoCodesDir.entryList(QDir::Dirs);
     ojList.removeFirst(); // Remove '.'
     ojList.removeFirst(); // Remove '..'
