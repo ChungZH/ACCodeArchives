@@ -26,7 +26,7 @@ Luogu           112 files.
 SMOJ            10 files.
 SPOJ            9 files.
 USACO           11 files.
-UVa             24 files.
+UVa             25 files.
 ```
 
 ------
