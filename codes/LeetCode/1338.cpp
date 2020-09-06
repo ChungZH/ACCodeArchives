@@ -1,7 +1,8 @@
 // [1338. 数组大小减半] https://leetcode-cn.com/problems/reduce-array-size-to-the-half/
 class Solution {
 public:
-    int minSetSize(vector<int>& arr) {
+    int minSetSize(vector<int>& arr)
+    {
         map<int, int> m;
         for (int i : arr)
             m[i]++;
@@ -14,7 +15,8 @@ public:
         for (int i : temp) {
             ans++;
             ded += i;
-            if (ded * 2 >= arr.size()) break;
+            if (ded * 2 >= arr.size())
+                break;
         }
         return ans;
     }
