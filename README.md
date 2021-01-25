@@ -20,7 +20,7 @@
 ```
 AtCoder         46 files.
 CodeForces      90 files.
-LeetCode        10 files.
+LeetCode        11 files.
 LibreOJ         9 files.
 Luogu           114 files.
 SMOJ            10 files.
